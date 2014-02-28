@@ -8,12 +8,10 @@ install()
         install $@
 }
 
-STORAGE=/srv/storage
-
 # add map to guest option
 CONF=/etc/samba/smb.conf
 sed -i "s|guest account = .*|&\n    map to guest = bad user|" $CONF
 
 # change shared folder options to allow guest to access
-sed -i "s|path = /srv/storage|path = /srv/storage\n    guest ok = yes|" $CONF
+sed -i "s|[storage]|[storage]\n    guest ok = yes|" $CONF
 
