@@ -1,3 +1,0 @@
-[submodule "patches/01core-ldap"]
-	path = patches/01core-ldap
-	url = https://github.com/jstruebel/core-ldap
