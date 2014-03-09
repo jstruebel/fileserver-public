@@ -1,0 +1,3 @@
+[submodule "patches/01samba-shared"]
+	path = patches/01samba-shared
+	url = https://github.com/jstruebel/samba-shared.git
